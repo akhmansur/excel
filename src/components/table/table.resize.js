@@ -24,8 +24,6 @@ export function resizeHandler($root, event) {
     }
   }
   document.onmouseup = () => {
-    document.onmousemove = null
-    document.onmouseup = null
     if (type === 'col') {
       $parent.css({width: value + 'px'})
       $root.findAll(`[data-col="${$parent.data.col}"]`)
@@ -39,5 +37,7 @@ export function resizeHandler($root, event) {
       right: 0
 
     })
+    document.onmousemove = null
+    document.onmouseup = null
   }
 }
