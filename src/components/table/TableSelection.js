@@ -28,7 +28,6 @@ export class TableSelection {
   }
 
   applyStyle(style) {
-    console.log(this.group)
     this.group.forEach($el => $el.css(style))
   }
 }
