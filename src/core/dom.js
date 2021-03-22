@@ -122,8 +122,6 @@ class Dom {
   }
 }
 
-$('div').html('<h1>Test</h1>').clear()
-
 export function $(selector) {
   return new Dom(selector)
 }
